@@ -2,7 +2,7 @@ def add(*args):
     total = 0
     for n in args:         # simpler way -->  return sum(args)
         total += n
-    return total
+    return total           # args uses tuples
 
 
 print(add(1, 2, 3, 4, 5))
@@ -13,7 +13,7 @@ def calculate(n, **kwargs):
     #     print(key)
     n += kwargs["add"]
     n *= kwargs["mult"]
-    print(n)
+    print(n)                                 # kwargs uses dictionary
 
 
 calculate(2, add=5, mult=10)
